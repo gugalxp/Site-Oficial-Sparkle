@@ -1,0 +1,41 @@
+input[type="text"],input[type="email"], input[type="date"], input[type="time"], input[type="search"], input[type="password"], input[type="number"], input[type="tel"], textarea.form-control { border-radius: 0; transition: .3s; box-shadow: none; -webkit-appearance: none;  background-color: rgba(#000, .03); border: 0px solid transparent; color: rgba(0,0,0,.6); outline: none !important; padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px; width: 100%; height: inherit; font-size: 14px;
+  &:active, &:focus { box-shadow: none; background-color: rgba(0,0,0, .06); border-color: #fff; }
+  &:hover { box-shadow: none; background-color: rgba(0,0,0, .06); }
+}
+
+form {
+  &.has-background { border-radius: 5px; background-color: rgba(0,0,0, .3); padding: 20px; }
+  &.submitted {
+    .status { transform: scale(1); }
+    .form-group, .input-group { pointer-events: none; }
+  }
+  .status { transform: scale(.1); transition: .4s ease; top: -20px; right: -20px; position: absolute;
+    .status-icon { border-radius: 50%; transition: .4s ease; width: 40px; height: 40px; background-color: grey; color: #fff; text-align: center; line-height: 40px;
+      &.valid { background-color: #50aa8d; }
+      &.invalid { background-color: #e45544; }
+    }
+    i { font-size: 18px; }
+  }
+}
+
+.form {
+  ::-webkit-input-placeholder { color: rgba(0,0,0, .3); }
+  :-moz-placeholder { color: rgba(0,0,0, .3); }
+  ::-moz-placeholder { color: rgba(0,0,0, .3); }
+  :-ms-input-placeholder { color: rgba(0,0,0, .3); }
+}
+
+.input-group { box-shadow: 1px 1px 8px rgba(0,0,0,.07); border-radius: 50px; width: 100%; overflow: hidden;
+  .input-group-btn { position: absolute; height: 100%; right: 0; width: auto; z-index: 5;
+    .btn { transform: scale(.8); border-radius: 100%; transition: .4s ease; border: 3px solid rgba(0,0,0, .03); background-color: transparent; height: 100%; outline: none !important; width: 80px; font-size: 24px;
+      &:hover { background-color: rgba(0,0,0, .03); }
+    }
+  }
+  input[type="text"],input[type="email"], input[type="date"], input[type="time"], input[type="search"], input[type="password"], input[type="number"], input[type="tel"], textarea.form-control { border-radius: 0; transition: .3s; box-shadow: none; -webkit-appearance: none;  background-color: #fff; border: 2px solid #fff; color: rgba(0,0,0,.6); outline: none !important; padding-top: 25px; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; width: 100%; height: inherit; font-size: 18px;
+    &:active, &:focus { box-shadow: none; background-color: #fff; border-color: #fff; }
+    &:hover { box-shadow: none; background-color: #fff; }
+  }
+}
+.form-group {
+  .btn { padding-top: 14px; padding-bottom: 14px; }
+}

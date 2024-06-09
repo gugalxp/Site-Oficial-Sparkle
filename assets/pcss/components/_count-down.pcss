@@ -1,0 +1,21 @@
+/* -- Count Down */
+
+.count-down { margin-bottom: 60px;
+  .countdown-row { width: 100%;
+    &.countdown-show4 {
+      .countdown-section { width: 25%; }
+    }
+    &.countdown-show3 {
+      .countdown-section { width: 33%; }
+    }
+    &.countdown-show2 {
+      .countdown-section { width: 50%; }
+    }
+    &.countdown-show1 {
+      .countdown-section { width: 100%; }
+    }
+    .countdown-section { display: inline-block; position: relative; }
+    .countdown-amount { font-size: 60px; font-weight: bold; display: block; margin-bottom: -20px; position: relative; }
+    .countdown-period { opacity: .5; font-size: 12px; text-transform: uppercase; }
+  }
+}

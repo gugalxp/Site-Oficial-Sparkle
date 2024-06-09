@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ThemeStarz">
+
+
+    <title>CreaSoon - Creative Coming Soon Template</title>
+
+    <style>
+        body { background-color: #f3f3f3; }
+    </style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <div class="content-wrapper">
+        <div class="content-main animate">
+            <!--end container-->
+        </div>
+        <!--end content-main-->
+        <div class="background-wrapper">
+            <div id="background-content"></div>
+        </div>
+        <!--end background-wrapper-->
+    </div>
+    <!--end content-wrapper-->
+
+</div>
+<!--end page-wrapper-->
+
+
+<script>
+
+    //  Map
+
+    var latitude = 34.038405;
+    var longitude = -117.946944;
+    var markerImage = "assets/img/map-marker.png";
+    var mapTheme = "light";
+    var mapElement = "map";
+
+    // Background
+
+    var COLOURS = [ '#61dfff', '#A7EBCA', '#FFFFFF', '#ff6767', '#61dfff' ];
+    var radius = 0;
+    var randomColor = 0;
+
+    Sketch.create({
+
+        container: document.getElementById( 'background-content' ),
+        autoclear: false,
+        retina: 'auto',
+
+        update: function() {
+            radius = 2 + abs( sin( this.millis * 0.003 ) * 50 );
+        },
+
+        click: function() {
+            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
+        },
+
+        touchmove: function() {
+
+            for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+
+                touch = this.touches[i];
+
+                this.lineCap = 'round';
+                this.lineJoin = 'round';
+                this.fillStyle = this.strokeStyle = COLOURS[ randomColor % COLOURS.length ];
+                this.lineWidth = radius;
+
+                this.beginPath();
+                this.moveTo( touch.ox, touch.oy );
+                this.lineTo( touch.x, touch.y );
+                this.stroke();
+            }
+        }
+    });
+
+
+</script>
+
+</body>
