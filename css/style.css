@@ -129,7 +129,7 @@ header {
 	height: 170px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -6086,10 +6086,24 @@ right:-15px;
 
 .wow{visibility: hidden;}
 
+@keyframes shake {
+	0%, 100% { transform: translateY(0); }
+	25%, 75% { transform: translateY(-5px) rotate(0deg); }
+	50% { transform: translateX(5px) rotate(0deg); }
+  }
+  
+  .button-tremer {
+	animation: shake 1s ease infinite;
+  }
+  
+  .button-tremer:hover {
+	animation: none;
+  }
 
-#back-to-top {
+  
+#whatsapp {
     position: fixed;
-    bottom: 40px;
+    bottom: 80px;
     right: 40px;
     z-index: 999;
     width: 32px;
@@ -6102,29 +6116,7 @@ right:-15px;
     border-radius: 2px;
     text-decoration: none;
     transition: opacity 0.2s ease-out;
-    opacity: 0;
 	outline:none;
-}
-#back-to-top:hover {
-    background: #111;
-}
-#back-to-top.show {
-    opacity: 1;
-}
-#back-to-top:before{
-	font-family:"FontAwesome";
-	font-size:22px;
-	content:"\f106";
-	color:#222;
-	position:relative;
-	margin:5px;
-}
-#back-to-top:hover:before{
-	color:#fff;
-}
-
-#back-to-top.custom-1:before{
-	color:#fff;
 }
 
 /* mouse scroll icon begin */
