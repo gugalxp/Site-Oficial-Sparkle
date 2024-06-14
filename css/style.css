@@ -8847,6 +8847,18 @@ i.btn-action-hide {
 		text-align: center;
 		padding-bottom: 1em;
 	}
+
+	.container-whatsapp {
+		bottom: 1em !important;
+		right: 3em !important;
+	}
+}
+
+.container-whatsapp {
+	display: flex;
+	position: absolute;
+	bottom: 2em;
+	right: 5em;
 }
 
 .align {
