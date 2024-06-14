@@ -8833,7 +8833,11 @@ i.btn-action-hide {
 	#section-features .relaxe {
 		font-size: 25px !important;
 	}
-
+	
+	#section-features .cuidar {
+		font-size: 4.6vw !important;
+	}
+	
 	.contato {
 		display: none !important;
 	}
