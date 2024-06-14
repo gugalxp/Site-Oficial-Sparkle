@@ -8800,6 +8800,10 @@ i.btn-action-hide {
 		height: 80vh !important;
 	}
 
+	.space-hidden {
+		visibility: hidden;
+	}
+
 	#section-hero h1 {
 		font-size: 4.5552083333333335vw;
 	}
