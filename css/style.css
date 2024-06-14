@@ -8797,7 +8797,7 @@ i.btn-action-hide {
 	}
 
 	#particles-js {
-		height: 70vh !important;
+		height: 80vh !important;
 	}
 
 	#section-hero h1 {
@@ -8852,6 +8852,11 @@ i.btn-action-hide {
 	.container-whatsapp {
 		bottom: 1em !important;
 		right: 3em !important;
+	}
+
+	#section-hero button {
+		background-color: #D62A6A;
+		color: #fff;
 	}
 }
 
