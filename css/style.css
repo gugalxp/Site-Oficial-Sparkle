@@ -8804,6 +8804,15 @@ i.btn-action-hide {
 		font-size: 4.5552083333333335vw;
 	}
 
+	#section-features h3 {
+		font-size: 5vw;
+		line-height: 20px;
+	}
+	
+	#section-features p {
+		font-size: 4vw;
+	}
+	
 	#section-hero p {
 		margin-top: 10px;
 		font-size: 3.5552083333333335vw;
