@@ -8825,8 +8825,13 @@ i.btn-action-hide {
 
 	#section-features h1 {
 		display: flex;
-		flex-direction: column !important;
 		font-size: 5.5vw;
+		justify-content: center!important;
+		align-items: center !important;
+	}
+
+	#section-features .relaxe {
+		font-size: 25px !important;
 	}
 
 	.contato {
