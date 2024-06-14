@@ -8800,17 +8800,13 @@ i.btn-action-hide {
 		height: 80vh !important;
 	}
 
-	.space-hidden {
-		visibility: hidden;
-	}
-
 	#section-hero h1 {
 		font-size: 4.5552083333333335vw;
 	}
 
 	#section-features h3 {
 		font-size: 5vw;
-		line-height: 20px;
+		line-height: 30px;
 	}
 	
 	#section-features p {
@@ -8821,6 +8817,11 @@ i.btn-action-hide {
 		margin-top: 10px;
 		font-size: 3.5552083333333335vw;
 		text-align: center;
+	}
+	
+	.space-mobile {
+		display: flex !important;
+		gap: 1em !important;
 	}
 
 	.welcome {
