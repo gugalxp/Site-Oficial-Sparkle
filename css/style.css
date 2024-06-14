@@ -8835,6 +8835,10 @@ i.btn-action-hide {
 		justify-content: center !important;
 		align-items: center !important;
 	}
+
+	header {
+		display: none;
+	}
 }
 
 .align {
