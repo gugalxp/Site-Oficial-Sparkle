@@ -8717,7 +8717,7 @@ i.btn-action-hide {
 	font-size: 12vw !important;
 }
 
-@media (min-width: 1280px) { 
+@media (min-width: 1280px) {
 	.largura-frase {
 		max-width: 100px !important;
 	}
@@ -8735,15 +8735,15 @@ i.btn-action-hide {
 		font-size: 3.9vw;
 		flex-direction: column !important;
 	}
-	
+
 	#section-features h3 {
 		font-size: 3.2vw;
 	}
-	
+
 	#section-features p {
 		font-size: 2.5vw;
 	}
-	
+
 	.paragrafo {
 		font-size: 22px !important;
 	}
@@ -8772,7 +8772,8 @@ i.btn-action-hide {
 		font-size: 18px;
 	}
 
-	.di-small-2, .di-small {
+	.di-small-2,
+	.di-small {
 		display: none !important;
 	}
 
@@ -8794,6 +8795,7 @@ i.btn-action-hide {
 	.img-selo {
 		width: 35.276041666666668vw;
 	}
+
 	#particles-js {
 		height: 70vh !important;
 	}
@@ -8807,12 +8809,13 @@ i.btn-action-hide {
 		font-size: 3.5552083333333335vw;
 		text-align: center;
 	}
-	
+
 	.welcome {
 		display: none !important;
 	}
 
-	.di-small-2, .di-small {
+	.di-small-2,
+	.di-small {
 		display: none !important;
 	}
 
@@ -8826,7 +8829,7 @@ i.btn-action-hide {
 	}
 
 	.contato {
-		display: none !important;		
+		display: none !important;
 	}
 
 	.column {
@@ -8838,6 +8841,11 @@ i.btn-action-hide {
 
 	header {
 		display: none;
+	}
+
+	#call-to-action h3 {
+		text-align: center;
+		padding-bottom: 1em;
 	}
 }
 
