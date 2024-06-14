@@ -8824,10 +8824,12 @@ i.btn-action-hide {
 	}
 
 	#section-features h1 {
+		gap: .2em;
 		display: flex;
 		font-size: 5.5vw;
 		justify-content: center!important;
 		align-items: center !important;
+		flex-direction: column;
 	}
 
 	#section-features .relaxe {
