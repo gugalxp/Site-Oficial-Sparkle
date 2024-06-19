@@ -5661,8 +5661,6 @@ a.img-icon-zoom {
 	width: 50%;
 }
 
-
-
 @media only screen and (max-width : 768px) {
 
 	.w1,
@@ -5671,6 +5669,11 @@ a.img-icon-zoom {
 	.w4,
 	.w5 {
 		width: 100%
+	}
+
+	.content-parceiros {
+		justify-content: flex-start !important;
+		overflow-x: scroll;
 	}
 }
 
@@ -7759,6 +7762,9 @@ i.btn-action-hide {
 		margin-left: 15px;
 	}
 
+	#parceiros h1 {
+		font-size: 8vw;
+	}
 }
 
 /* -------------------------------------------------- 
@@ -7768,9 +7774,13 @@ i.btn-action-hide {
 	.slider_text {
 		padding-top: 0px;
 	}
-
 }
 
+@media (min-width: 500px) and (max-width: 700px) {
+	#parceiros h1 {
+		font-size: 8vw !important;
+	}
+}
 
 @media only screen and (max-width: 992px) {
 
@@ -7818,7 +7828,6 @@ i.btn-action-hide {
 		width: 100%;
 		right: 1px;
 	}
-
 
 	header.side-header,
 	.de_light header.side-header {
@@ -8785,6 +8794,10 @@ i.btn-action-hide {
 		font-size: 20vw !important;
 	}
 
+	.parceiros-fundo {
+		font-size: 20vw !important;
+	}
+
 	#call-to-action h3 {
 		width: 400px;
 	}
@@ -8808,17 +8821,17 @@ i.btn-action-hide {
 		font-size: 5vw;
 		line-height: 30px;
 	}
-	
+
 	#section-features p {
 		font-size: 4vw;
 	}
-	
+
 	#section-hero p {
 		margin-top: 10px;
 		font-size: 3.5552083333333335vw;
 		text-align: center;
 	}
-	
+
 	.space-mobile {
 		display: flex !important;
 		gap: 1em !important;
@@ -8837,11 +8850,19 @@ i.btn-action-hide {
 		display: none !important;
 	}
 
+	#parceiros h1 {
+		font-size: 10vw !important;
+	}
+
+	.parceiros-fundo {
+		display: none !important;
+	}
+
 	#section-features h1 {
 		gap: .2em;
 		display: flex;
 		font-size: 5.5vw;
-		justify-content: center!important;
+		justify-content: center !important;
 		align-items: center !important;
 		flex-direction: column;
 	}
@@ -8849,11 +8870,11 @@ i.btn-action-hide {
 	#section-features .relaxe {
 		font-size: 25px !important;
 	}
-	
+
 	#section-features .cuidar {
 		font-size: 4.6vw !important;
 	}
-	
+
 	.contato {
 		display: none !important;
 	}
@@ -8898,3 +8919,18 @@ i.btn-action-hide {
 	flex-direction: row;
 }
 
+#parceiros h1 {
+	font-size: 5vw;
+}
+
+.content-parceiros {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
