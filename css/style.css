@@ -4517,7 +4517,7 @@ a.btn-right {
 .de-team-list .team-desc {
 	width: 100%;
 	height: 100%;
-	padding: 40px;
+	padding: 20px;
 	padding-bottom: 0;
 	position: absolute;
 	z-index: 100;
@@ -8897,3 +8897,4 @@ i.btn-action-hide {
 	justify-content: space-between;
 	flex-direction: row;
 }
+
