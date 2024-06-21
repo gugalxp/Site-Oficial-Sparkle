@@ -8927,6 +8927,8 @@ i.btn-action-hide {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 11em;
+	gap: 3em;
 }
 
 .content-time {
